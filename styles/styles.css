@@ -10,6 +10,9 @@
 
     --fonte-primaria: 'Krona One', sans-serif;
     --fonte-secundaria: 'Montserrat', sans-serif;
+
+    --tamanho-fonte-titulo: 2.25rem;
+    --tamanho-fonte-texto:1.5rem;
 }
 
 *{
@@ -35,7 +38,7 @@ body{
 .cabecalho__menu__link{
     color: var(--cor-terciaria);
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: var(--tamanho-fonte-texto);
     font-weight: 600;
     text-decoration: none;
 }
@@ -49,7 +52,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 58px; 
+    gap: 3.625rem; 
 }
 
 .apresentacao__conteudo{
@@ -61,7 +64,7 @@ body{
 }
 
 .apresentacao__conteudo__titulo{
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: var(--fonte-primaria);
     
 }
@@ -70,12 +73,12 @@ body{
 .apresentacao__conteudo__texto{
 
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .apresentacao__conteudo__texto__curriculo{
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: var(--tamanho-fonte-texto);
     display: flex;
     flex-direction: column;
     justify-self:auto
@@ -97,7 +100,7 @@ body{
     padding: 21.5px 0px;
     border-radius: 8px;
     border: 2px solid var(--cor-terciaria);
-    font-size: 24px;
+    font-size: var(--tamanho-fonte-texto);
     font-family: var(--fonte-secundaria);
     font-weight: 600;
     text-decoration: none;
@@ -117,11 +120,11 @@ body{
     font-family: var(--fonte-primaria);
     font-weight: 400;
     color: var(--cor-secundaria);
-    font-size: 24px;
+    font-size: var(--tamanho-fonte-texto);
 }
 
 .apresentacao__conteudo__titulo__curriculo{
-    font-size: 36px;
+    font-size: var(--tamanho-fonte-titulo);
     font-family: var(--fonte-primaria);
     background-color: var(--cor-terciaria);
     padding: 5px;
