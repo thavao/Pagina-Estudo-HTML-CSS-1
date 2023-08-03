@@ -134,7 +134,7 @@ body{
     padding: 2%;
     color: var(--cor-primaria);
     font-family: 'Montserrat';
-    font: var(--tamanho-fonte-texto);
+    font: var(--fonte-secundaria)
     font-weight: 400;
 }
 
