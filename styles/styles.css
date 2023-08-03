@@ -32,7 +32,7 @@ body{
 
 .cabecalho__menu{
     display: flex;
-    gap: 80px;
+    gap: 5%;
 }
 
 .cabecalho__menu__link{
@@ -43,46 +43,40 @@ body{
     text-decoration: none;
 }
 
-.titulo-destaque{
-    color: var(--cor-terciaria);
-}
+
 
 .apresentacao{
     padding: 5% 10%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 3.625rem; 
+    gap: 82px; 
 }
 
 .apresentacao__conteudo{
     width: 50%;
     display: flex;
     flex-direction: column;
-    gap: 84px;
+    gap: 40px;
     
 }
 
 .apresentacao__conteudo__titulo{
-    font-size: 2.25rem;
+    font-size: var(--tamanho-fonte-titulo);
     font-family: var(--fonte-primaria);
     
 }
 
+.titulo-destaque{
+    color: var(--cor-terciaria);
+}
 
 .apresentacao__conteudo__texto{
 
     font-family: var(--fonte-secundaria);
-    font-size: 1.5rem;
+    font-size: var(--tamanho-fonte-texto);
 }
 
-.apresentacao__conteudo__texto__curriculo{
-    font-family: var(--fonte-secundaria);
-    font-size: var(--tamanho-fonte-texto);
-    display: flex;
-    flex-direction: column;
-    justify-self:auto
-}
 
 .apresentacao__links{
     display: flex;
@@ -90,6 +84,12 @@ body{
     flex-direction: column;
     align-items: center;
     gap: 32px;
+}
+
+.apresentacao__links__subtitulo{
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: var(--tamanho-fonte-texto);
 }
 
 .apresentacao__links__navegacao{
@@ -111,15 +111,9 @@ body{
 .apresentacao__links__link:hover{
     background-color: var(--cor-hover);
 }
+
 .apresentacao__imagem{
     width: 50%;
-}
-
-.apresentacao__links__subtitulo{
-    font-family: var(--fonte-primaria);
-    font-weight: 400;
-    color: var(--cor-secundaria);
-    font-size: var(--tamanho-fonte-texto);
 }
 
 .apresentacao__conteudo__titulo__curriculo{
@@ -137,12 +131,29 @@ body{
 .rodape{
     background-color: var(--cor-terciaria);
     text-align: center;
-    padding: 24px;
+    padding: 2%;
     color: var(--cor-primaria);
     font-family: 'Montserrat';
-    font: 24px;
+    font: var(--tamanho-fonte-texto);
     font-weight: 400;
 }
 
 
+@media (max-width: 1200px){
+    .cabecalho{
+        padding: 10%;
+    }
+    
+    .cabecalho__menu{
+        justify-content:center;
+    }
 
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .apresentacao__conteudo{
+        width: auto;
+        gap: calc(5vh + 5px) calc(5vw + 5px)
+    }
+}
